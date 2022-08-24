@@ -97,7 +97,7 @@ namespace MvcMovie.Controllers
         {
             if (id != movie.Id)
             {
-                return NotFound();
+                return NotFound("Invalid ID!");
             }
 
             if (ModelState.IsValid)
